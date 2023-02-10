@@ -1,3 +1,9 @@
+puts('Seeding Movie data!')
+
+puts('Destroying Movie data!')
+
+Movie.destroy_all
+
 Movie.create([
   {
     title: "The Color Purple",
@@ -143,3 +149,4 @@ Movie.create([
     female_director: true
   }
 ])
+puts('Done Seeding!')
